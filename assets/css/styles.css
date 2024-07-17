@@ -1,0 +1,677 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+    --heading-color: #0d1111;
+    --sub-heading-color: #767e7e;
+    --desc-color: #9da6a5;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+button {
+    border: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nobreak {
+    word-break: normal;
+}
+
+[class*="__content"] {
+    max-width: calc(100% - 48px);
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class*="__heading"] {
+    color: var(--heading-color);
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.lv1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+[class*="__floating-heading"] {
+    color: var(--sub-heading-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+[class*="__desc"] {
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.69;
+    word-break: break-all;
+}
+
+.btn {
+    min-width: 186px;
+    padding: 23.6px 16px;
+    border-radius: 14px;
+    background: #1ebfc1;
+    color: #fff;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    padding: 8px 0;
+    margin-top: 44px;
+    background: #fff;
+    z-index: 1;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar */
+.navbar__item {
+    padding: 8px 20px;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.navbar__item--active {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.auth-buttons__signin {
+    color: #494949;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.auth-buttons__signup {
+    display: inline-block;
+    min-width: 108px;
+    padding: 15.2px 16px;
+    margin-left: 24px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.auth-buttons__signup:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* Hero */
+.hero__content {
+    display: flex;
+    margin: 50px auto 79px;
+}
+
+.hero__info {
+    margin: auto 71px auto auto;
+    width: 39.1%;
+}
+
+.hero__floating-heading {
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero__desc {
+    margin-top: 46px;
+    width: 374px;
+    font-size: 1.8rem;
+    line-height: 1.78;
+}
+
+.hero .info__cta {
+    display: flex;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.hero .info__cta__btn {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero .info__cta__wrapper {
+    margin-left: 50px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.02);
+    cursor: pointer;
+}
+
+.hero__images {
+    position: relative;
+    width: 55%;
+}
+
+.hero__images .desc {
+    color: var(--heading-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero__images .images__main-pic {
+    display: block;
+    margin-left: auto;
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.hero__images .images__book-illustrator-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 149px;
+    left: 20px;
+    width: 157px;
+    height: 75px;
+    padding: 17px 25px 18px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__images .images__book-illustrator-wrapper .book-illustrator {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    background: #ff8282;
+    border-radius: 3px;
+}
+
+.hero__images .images__book-illustrator-wrapper .book-illustrator .line {
+    position: absolute;
+    bottom: 8px;
+    left: 4px;
+    right: 4px;
+    width: 28px;
+    height: 4px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.hero__images .images__book-illustrator-wrapper .desc {
+    width: 55px;
+    height: 30px;
+}
+
+.hero__images .images__schedule-illustrator-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 46px;
+    padding: 16px 25px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__images .images__schedule-illustrator-wrapper .schedule-illustrator {
+    margin: 16px auto;
+}
+
+.hero__images
+    .images__schedule-illustrator-wrapper
+    .schedule-illustrator
+    .line:last-child {
+    margin: auto;
+    width: 26px;
+    height: 6px;
+    background: #edf1f5;
+    border-radius: 3px;
+}
+
+.hero__images .images__students-illustrator-wrapper {
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+    padding: 17px 35px;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero__images .images__students-illustrator-wrapper .avatars {
+    display: flex;
+    margin: 8px 0 0 8px;
+}
+
+.hero__images .images__students-illustrator-wrapper .avatars .avt {
+    width: 33px;
+    height: 33px;
+    margin-left: -8px;
+    border-radius: 33px;
+    object-fit: cover;
+
+    color: #fff;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Features */
+.features {
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+.features__heading {
+    margin-top: 18px;
+    width: 577px;
+    line-height: 5.6rem;
+}
+
+.features__desc {
+    margin-top: 18px;
+    width: 590px;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.feature-list {
+    margin-top: 80px;
+    display: flex;
+    gap: 209px;
+}
+
+.feature-item {
+    width: 168px;
+}
+
+.feature-item__ability {
+    margin: 26px 0 16px;
+    color: var(--heading-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Popular Courses */
+.popular-courses {
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+.popular-courses__heading {
+    margin-top: 18px;
+}
+
+.popular-courses__row {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-courses__desc {
+    width: 525px;
+    color: var(--sub-heading-color);
+    font-size: 1.8rem;
+    line-height: 1.78;
+}
+
+.popular-courses__viewall {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.popular-courses__course-list {
+    margin-top: 79px;
+    display: flex;
+    justify-content: space-between;
+    gap: 47px;
+}
+
+.popular-courses__course-list .course-item {
+    width: calc(33.3% - 33.1px);
+    position: relative;
+    height: 517px;
+}
+
+.popular-courses__course-list .course-item__images {
+    position: relative;
+}
+
+.popular-courses__course-list .course-item__pic {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.popular-courses__course-list .course-item__images .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #d0efed;
+    opacity: 0.35;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.popular-courses__course-list .course-item__info {
+    position: relative;
+    left: 17px;
+    right: 17px;
+    bottom: 74px;
+    width: 325px;
+    height: 195px;
+    padding: 18px 25px 29px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular-courses__course-list .course-item__info .info__heading {
+    font-size: 2.2rem;
+}
+
+.popular-courses__course-list .course-item__info .info__fee {
+    margin-top: 16px;
+    color: var(--sub-heading-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.popular-courses__course-list .course-item__info .info__price {
+    color: var(--heading-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.popular-courses__course-list .course-item__info .info__desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.popular-courses__course-list .course-item__info .info__details {
+    margin-top: 18px;
+}
+
+.popular-courses__course-list .course-item__info .info__detail {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 26px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.popular-courses__course-list .course-item__info .info__detail::before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+/* Statics */
+.statics {
+    margin-top: 228px;
+}
+
+.statics__content {
+    width: 862px;
+}
+
+.statics__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statics__list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statics__list__item .statics__figure {
+    color: var(--heading-color);
+    font-size: 6.2rem;
+    font-weight: 700;
+}
+
+.statics__list__item .statics__desc {
+    color: var(--sub-heading-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* Feedback */
+.feedback {
+    padding: 50px 0;
+    margin-top: 214px;
+}
+
+.feedback__row {
+    display: flex;
+}
+
+.feedback__info {
+    width: 42%;
+}
+
+.feedback__info__detail {
+    margin-top: 27px;
+    width: 419px;
+    color: #5d6564;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.feedback__info__user {
+    margin-top: 33px;
+    color: var(--sub-heading-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.feedback__info__user .username {
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.feedback__controls {
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+}
+
+.feedback__controls .control-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2ac9bf;
+}
+
+.feedback__avatars {
+    position: relative;
+    width: 58%;
+}
+
+.feedback__avatars .avt {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback__avatars .avt:nth-child(1) {
+    width: 235px;
+    height: 235px;
+    inset: 107px 171px 139px auto;
+}
+
+.feedback__avatars .avt:nth-child(2) {
+    width: 110px;
+    height: 110px;
+    inset: 19px 0 auto auto;
+}
+
+.feedback__avatars .avt:nth-child(3) {
+    width: 78px;
+    height: 78px;
+    inset: auto 32px 29px auto;
+}
+
+.feedback__avatars .avt:nth-child(4) {
+    width: 78px;
+    height: 78px;
+    inset: auto 389px 0 auto;
+}
+
+.feedback__avatars .avt:nth-child(5) {
+    width: 78px;
+    height: 78px;
+    inset: auto auto 145px 0;
+}
+
+.feedback__avatars .avt:nth-child(6) {
+    width: 92px;
+    height: 92px;
+    inset: 0 443px auto auto;
+}
+
+/* Newsletter */
+.newsletter {
+    margin-top: 80px;
+    padding: 76px 0 88px 135px;
+    background: #def6f5;
+}
+
+.row {
+    display: flex;
+}
+
+.newsletter__heading {
+    color: #070707;
+}
+
+.newsletter__desc {
+    margin-top: 18px;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.newsletter_cta {
+    margin-left: 410px;
+}
+
+.newsletter__btn {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer__content {
+    padding: 131px 0 50px;
+}
+
+.footer-top {
+    display: flex;
+    gap: 144px;
+}
+
+.footer__column .title {
+    color: #2e2e2e;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.footer__column .list {
+    margin-top: 26px;
+}
+
+.footer__column .item {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #535353;
+    font-size: 1.6rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.footer__column .social-icon {
+    margin-right: 9px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 62px;
+    color: #b0b5b4;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
