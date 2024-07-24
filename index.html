@@ -22,7 +22,9 @@
     <!-- Header -->
     <header class="header">
         <div class="header__content">
-            <img src="./assets/images/logo.svg" alt="Besnik." class="logo">
+            <a href="/">
+                <img src="./assets/images/logo.svg" alt="Besnik." class="logo">
+            </a>
 
             <nav class="navbar">
                 <a class="navbar__item navbar__item--active" href="#">Home</a>
@@ -226,12 +228,20 @@
                             learn from distance.”</p>
                         <p class="feedback__info__user"><strong class="username">-Ben Foakes,</strong> student.</p>
                         <div class="feedback__controls">
-                            <div class="control-wrapper">
-                                <img src="./assets/images/chevron-left.svg" alt="" class="control__left">
-                            </div>
-                            <div class="control-wrapper">
-                                <img src="./assets/images/chevron-right.svg" alt="" class="control__right">
-                            </div>
+                            <a href="#!" class="control-wrapper">
+                                <svg class="control__left" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 13L1 7L7 1" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="#!" class="control-wrapper">
+                                <svg class="control__right" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13L7 7L1 1" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                     <div class="feedback__avatars">
@@ -264,9 +274,9 @@
     <footer class="footer">
         <div class="footer__content">
             <div class="footer-top">
-                <div class="footer__column">
+                <a href="/" class="footer__column">
                     <img src="./assets/images/logo.svg" alt="Besnik." class="logo">
-                </div>
+                </a>
                 <div class="footer__column">
                     <h3 class="title">Company</h3>
                     <div class="list">

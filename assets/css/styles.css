@@ -389,6 +389,10 @@ a {
     height: 517px;
 }
 
+.popular-courses__course-list .course-item:hover {
+    cursor: pointer;
+}
+
 .popular-courses__course-list .course-item__images {
     position: relative;
 }
@@ -556,6 +560,12 @@ a {
     height: 50px;
     border-radius: 50%;
     background: #2ac9bf;
+    color: #fff;
+}
+
+.feedback__controls .control-wrapper:hover {
+    background: #fff;
+    color: #2ac9bf;
 }
 
 .feedback__avatars {
