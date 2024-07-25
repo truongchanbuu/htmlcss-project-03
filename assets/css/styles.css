@@ -505,6 +505,7 @@ a {
 }
 
 .statics__list__item .statics__desc {
+    margin-top: 22px;
     color: var(--sub-heading-color);
     font-size: 1.8rem;
     font-weight: 400;
@@ -564,8 +565,7 @@ a {
 }
 
 .feedback__controls .control-wrapper:hover {
-    background: #fff;
-    color: #2ac9bf;
+    opacity: 0.5;
 }
 
 .feedback__avatars {
